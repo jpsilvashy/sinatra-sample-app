@@ -1,0 +1,11 @@
+<section>
+  <h1>View User</h1>
+
+  <p>Username: <strong><%= h @user.username %></strong></p>
+  <p>Email:    <strong><%= h @user.email %></strong></p>
+  <p>
+    <a href="/user/<%= h @user.username %>/edit">Edit</a>
+    <a href="/user/<%= h @user.username %>/delete">Delete</a>
+    <a href="/users">View All</a>
+  </p>
+</section>

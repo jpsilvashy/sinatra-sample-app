@@ -1,0 +1,5 @@
+<div id="flash">
+  <% flash.each do |type,msg| %>
+    <div class="<%= h type %>"><%= h msg %></div>
+  <% end %>
+</div>

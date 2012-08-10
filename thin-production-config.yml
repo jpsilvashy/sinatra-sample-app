@@ -1,0 +1,10 @@
+---
+environment: production   # Production environment
+# user: web                 # Process user
+# group: web                # Process group
+address: 127.0.0.1        # Server IP
+port: 5000                # Port for first process
+servers: 8                # Number of processes
+daemonize: true           # Run processes as daemons
+onebyone: true            # Restart servers one-by-one
+wait: 60                  # Max wait time for server start

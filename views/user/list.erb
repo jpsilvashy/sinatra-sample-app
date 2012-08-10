@@ -1,0 +1,9 @@
+<section>
+  <h1>All Users</h1>
+
+  <p><a href="/users/create">Create User</a></p>
+  
+  <% @users.each do |u| %>
+    <p><%= h u.username %> <a href="/user/<%= h u.username %>">View</a></p>
+  <% end %>
+</section>

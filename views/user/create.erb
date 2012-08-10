@@ -1,0 +1,28 @@
+<section>
+  <h1>Create User</h1>
+
+  <%= erb :'user/_errors' %>
+
+  <form method="post" action="/users/create">
+    <p>
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" value="<%= h @user.username if @user %>"/>
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" value="<%= h @user.email if @user %>"/>
+    </p>
+    <p>
+      <label for="password">Password 1<sup>st</sup></label>
+      <input type="password" name="password" id="password"/>
+    </p>
+    <p>
+      <label for="password_conf">Password 2<sup>nd</sup></label>
+      <input type="password" name="password_conf" id="password_conf"/>
+    </p>
+    <p>
+      <input type="submit" value="Create"/>
+      <a href="/users/">Cancel</a>
+    </p>
+  </form>
+</section>
